@@ -1,9 +1,6 @@
-**iCCup crawler**
+# iCCup crawler
 
-----
-Features:
+Basically, there're 2 endpoints:
 
-- Parse specific user by URL
-- Parse specific match by URL
-
-----
+- Parse a user profile (by specifiying its name)
+- Parse a game info (by specifying its ID)
