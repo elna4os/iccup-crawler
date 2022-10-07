@@ -1,20 +1,21 @@
-### iCCup crawler
+### [iCCup.com](https://iccup.com/) crawler
 
 ---
 
-Python: 3.7
+![Alt text](images/slark.png "Title")
 
 ---
 
-Using this API, you can crawl:
+Features:
 
-- Players list
-- Specific player profile
-- Specifi game info
+- Parse player profile
+- Parse game profile (in progress)
 
 ---
 
 To run this project:
+
+- Create and activate virtualenv
 
 - Install dependencies:
 
@@ -22,8 +23,8 @@ To run this project:
 pip install -r app/requirements.txt --no-cache-dir
 ```
 
-- Run application:
+- Run API:
 
 ```shell
-python app/app.py
+uvicorn app:APP --host <host> --port <port> --reload
 ```
