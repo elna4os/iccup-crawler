@@ -1,4 +1,3 @@
-from datetime import datetime
 from typing import Optional, List
 
 from pydantic import BaseModel
@@ -18,11 +17,6 @@ class PreviousSeasonsStats(BaseModel):
     rank_type: str
     kills_num: int
     deaths_num: int
-
-
-class GameTime(BaseModel):
-    datetime_: datetime
-    timezone: str
 
 
 class Player(BaseModel):
@@ -49,18 +43,10 @@ class Player(BaseModel):
 
 
 class PlayerInGameStats(BaseModel):
-    player_name: str
+    name: str
     hero_name: str
-    rank: str
-    country: str
     streak: int
-    points: int
-    kills: int
-    deaths: int
-    assists: int
-    creeps: int
-    gold: int
-    towers: int
+    reward: int
 
 
 class Game(BaseModel):
@@ -68,11 +54,11 @@ class Game(BaseModel):
     date: str
     name: str
     host: str
-    length: str
+    duration: str
     server: str
     map_version: str
 
     sentinel_heroes: List[PlayerInGameStats]
     scourge_heroes: List[PlayerInGameStats]
 
-    team_looser: str
+    winner: Optional[str] = None
