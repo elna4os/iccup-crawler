@@ -21,5 +21,5 @@ pip install -r app/requirements.txt --no-cache-dir
 - Docker image:
 
     ```shell
-  docker run -d -p 8000:8000 shiriusu/iccup-crawler:<tag>
+  docker run -d -p 8000:8000 <name>:<tag>
   ```
