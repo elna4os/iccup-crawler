@@ -1,8 +1,6 @@
 ### [iCCup.com](https://iccup.com/) crawler
 
-An API for parsing player/game profile
-
----
+Player/game profile parsing API  
 
 <ins>Install deps</ins>
 
@@ -21,5 +19,5 @@ pip install -r app/requirements.txt --no-cache-dir
 - Docker image:
 
     ```shell
-  docker run -d -p 8000:8000 <name>:<tag>
-  ```
+    docker run -d -p 8000:8000 <name>:<tag>
+    ```
